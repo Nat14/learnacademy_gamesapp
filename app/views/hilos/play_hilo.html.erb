@@ -1,0 +1,24 @@
+<div class="jumbotron text-center">
+    <h1>This is a game of HI and LO.</h1>  
+    <h3><%= cookies[:player].nil? ? "New Player" : cookies[:player].capitalize %>! Are you ready to play?</h3>
+    <h5>Guess a number from 1 to 100.</h5>
+</div>
+<div class="row">
+    <div class="col-sm-4 text-center col-sm-offset-4">
+        <form action="/hilo" method="get">
+            <div class="input-group">
+              <input type="text" name="guess" class="form-control" placeholder="Guess a number" aria-describedby="basic-addon2">
+              <span class="input-group-btn"><button type="submit" class="btn btn-default">Submit your guess</button></span>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 text-center col-sm-offset-4">
+        <h3>Your guess: <span><%= @guess %></span></h3>
+        <h3>Your previous guesses:</3> 
+        <h4><%= cookies[:all_guess].chop.chop %></h4>
+        <h3 id="notice"><%= flash.now[:notice] %></h3>
+        <h3 id="alert"><%= flash.now[:alert] %></h3>
+    </div>
+</div>

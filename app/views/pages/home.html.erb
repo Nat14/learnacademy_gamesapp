@@ -1,0 +1,18 @@
+
+    <div class="jumbotron text-center">
+        <h1>Welcome to my LEARN game page.</h1>  
+        <h3><%= cookies[:player].nil? ? "New Player" : cookies[:player].capitalize %>! Are you ready to play?</h3>
+        <h5>Enter a player name or click on a game to play.</h5>
+    </div>
+    <div class="col-sm-4 text-center col-sm-offset-4">
+        <form action="/" type="get">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="name" name="player">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+        </form>
+        
+    </div>
+
