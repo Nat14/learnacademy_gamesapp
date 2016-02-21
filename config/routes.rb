@@ -1,5 +1,18 @@
 Rails.application.routes.draw do
+  get 'car/simulator/speedup' => 'car#speedup'
+  
+  get 'car/simulator/slowdown' => 'car#slowdown'
+  
+  get 'car/simulator/parkingbrake' => 'car#parkingbrake'
+  
+  get 'car/simulator/carlight' => 'car#carlight'
+  
+  get 'car/simulator' => 'car#simulator'
+  
+  get 'car/create' => 'car#create'
+
   get '/hilo' => 'hilos#play_hilo'
+  
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
