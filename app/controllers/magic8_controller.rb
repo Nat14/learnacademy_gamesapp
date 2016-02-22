@@ -5,7 +5,7 @@ class Magic8Controller < ApplicationController
 
     if !params[:question].nil?
       num = Random.new
-      a = num.rand(answerArray.length+1)
+      a = num.rand(answerArray.length)
       flash.now[:alert] = answerArray[a]
     end
   end
