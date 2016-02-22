@@ -1,0 +1,25 @@
+// Place all the styles related to the Magic8 controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ball {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 35%;
+    
+    // width: 0;
+// 	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid gray;
+    
+}
+
+.ballin {
+    font-size: 90pt;
+    color: white;
+    
+
+}
