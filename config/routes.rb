@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'loginvalidate' => 'loginvalidate#validate'
+
   get 'tictactoe' => 'tictactoe#play_tictactoe'
 
   get 'magic8' => 'magic8#play_magic8'
