@@ -1,6 +1,6 @@
 <div class="jumbotron text-center">
     <h1>Validate Username and Password</h1>  
-    <h3><%= cookies[:player].nil? ? "New Player" : cookies[:player].capitalize %>! Are you ready to play?</h3>
+    <h3><%= cookies[:player].nil? ? "New Player" : cookies[:player].capitalize %>! Let see if you can submit valid username and password</h3>
     <h5>Using Ruby to vaidate username and password.</h5>
 </div>
 
@@ -9,7 +9,7 @@
         <form action="/loginvalidate" method="get" class="form-horizontal">
             <div class="form-group">
                 <label class="control-label">User Name: </label>
-                <input type="text" name="username" class="form-control"/>
+                <input type="text" name="username" class="form-control" autofocus/>
                 <label class="control-label">Password: </label>
                 <input type="text" name="pass" class="form-control"/>
             </div>
